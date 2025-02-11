@@ -1,0 +1,220 @@
+@import "./reset";
+@import "./variables/global";
+@import "./themes/light";
+@import "./themes/dark";
+
+body {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    font: var(--font-l);
+    color: var(--primary-color);
+
+    -webkit-tap-highlight-color: rgb(255 255 255 / 0%);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.lock {
+    overflow: hidden;
+}
+
+.app {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    min-height: 100vh;
+
+    background: var(--bg-color);
+}
+
+.modal {
+    position: absolute;
+    width: 100vh;
+    height: 100%;
+    z-index: 100;
+}
+
+.container {
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.content-page {
+    position: relative;
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.pageup {
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.up {
+    display: block;
+
+    width: 40px;
+    height: 40px;
+
+    opacity: 0;
+
+    transition: all 0.3s;
+    fill: "#e52d87a3";
+}
+
+.activeScroll {
+    .up {
+        opacity: 1;
+    }
+}
+
+.toy {
+    width: 30px;
+}
+
+.small {
+    height: 34px;
+}
+
+.medium {
+    height: 36px;
+}
+
+.large {
+    height: 39px;
+}
+
+.link {
+    position: relative;
+
+    font: var(--font-m);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    background-image:
+        linear-gradient(
+            to right,
+            var(--hover-color),
+            var(--hover-color) 50%,
+            var(--link-color) 50%
+        );
+    background-position: -100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% 100%;
+
+    transition: all 0.3s ease-in-out;
+
+    -webkit-text-fill-color: transparent;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+
+        display: block;
+
+        width: 0;
+        height: 3px;
+
+        background: var(--hover-color);
+
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        background-position: 0;
+
+        &::before {
+            width: 100%;
+        }
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+        padding: 0 10px;
+    }
+
+    .toy {
+        width: 25px;
+    }
+
+    .small {
+        height: 28.3px;
+    }
+
+    .medium {
+        height: 30px;
+    }
+
+    .large {
+        height: 32.5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .toy {
+        width: 17px;
+    }
+
+    .small {
+        height: 19.26px;
+    }
+
+    .medium {
+        height: 20.4px;
+    }
+
+    .large {
+        height: 22.1px;
+    }
+}
+
+@font-face {
+    font-family: "NewYear"; 
+    src: url("./newYear.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Algerian"; 
+    src: url("./Algerian\ Regular.ttf");
+    font-display: swap;
+}
+

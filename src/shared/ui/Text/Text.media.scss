@@ -1,0 +1,80 @@
+@media (max-width: 1200px) {
+    .title {
+        font: var(--font-title-l);
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .subTitle {
+        font: var(--font-title-xs);
+        font-weight: 700;
+    }
+
+    .text {
+        font: var(--font-ml);
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        font: var(--font-title-m);
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .subTitle {
+        font: var(--font-xl);
+        font-weight: 700;
+    }
+
+    .text {
+        font: var(--font-ml);
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font: var(--font-title-s);
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .subTitle {
+        font: var(--font-l);
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font: var(--font-xl);
+        font-weight: 700;
+        text-align: center;
+
+        span {
+            &::before {
+                width: 5%;
+            }
+
+            &::after {
+                width: 5%;
+            }
+        }
+    }
+
+    .text {
+        font: var(--font-m);
+    }
+
+    .epigraph {
+        width: 280px;
+        font: var(--font-sm);
+    }
+
+    .subTitle {
+        font: var(--font-l);
+        font-weight: 700;
+        text-align: center;
+    }
+}

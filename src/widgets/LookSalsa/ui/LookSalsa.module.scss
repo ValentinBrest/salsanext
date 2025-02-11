@@ -1,0 +1,35 @@
+.LookSalsa {
+    overflow: hidden;
+    width: 100%;
+    padding: var(--padding-l);
+    position: relative;
+}
+
+.snowMan {
+    position: absolute;
+    bottom: -2px;
+    left: 34%;
+    z-index: 50;
+    width: 188px;
+    height: 111px;
+    opacity: 0.75;
+}
+
+.wrap {
+    height: 100%;
+}
+
+.videoWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    gap: 10px;
+
+    iframe {
+        width: 370px;
+        height: 210px;
+    }
+}
+
+
+@import "./LookSalsa.media";

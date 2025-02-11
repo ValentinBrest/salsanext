@@ -1,0 +1,147 @@
+.title {
+    margin-bottom: var(--margin-m);
+
+    font: var(--font-title-m);
+    font-weight: 700;
+    font-style: inherit;
+    color: var(--gold-color);
+    text-align: center;
+    letter-spacing: inherit;
+
+    span {
+        position: relative;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 50%;
+            left: 110%;
+            transform: translateY(-50%);
+
+            display: block;
+
+            width: 25px;
+            height: 5px;
+
+            background: var(--gold-color);
+        }
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            top: 50%;
+            right: 110%;
+
+            display: block;
+
+            width: 25px;
+            height: 5px;
+
+            background: var(--gold-color);
+        }
+    }
+}
+
+.animation {
+    background: linear-gradient(90deg, #d39f64, #ffb400, #ff3333, #d39f64);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textflow 5s linear infinite;
+  }
+  @keyframes textflow {
+    from {background-position: 0% center}         
+    to {background-position: 200% center}
+  }
+
+.subTitle {
+    padding: 0 10px;
+
+    font: var(--font-xl);
+    font-weight: 700;
+    font-style: inherit;
+    color: var(--inverted-primary-color);
+    letter-spacing: inherit;
+}
+
+.text {
+    position: relative;
+
+    margin-bottom: var(--margin-s);
+
+    font: var(--font-ml);
+    font-style: inherit;
+    color: var(--inverted-primary-color);
+}
+
+.epigraph {
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+    padding-bottom: 30px;
+
+    font: var(--font-m);
+    color: var(--epigraph-color);
+}
+
+.author {
+    margin-top: 10px;
+}
+
+.error {
+    margin-bottom: unset;
+    font: var(--font-m);
+
+    .title {
+        color: var(--red-light);
+    }
+
+    .text {
+        font: var(--font-m);
+        color: var(--red-light);
+    }
+}
+
+.without {
+    font: var(--font-title-m);
+    font-weight: 700;
+
+    span {
+        &::before {
+            content: none;
+        }
+
+        &::after {
+            content: none;
+        }
+    }
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+.threeD {
+    font: var(--font-ml);
+    font-style: inherit;
+    color: var(--text-color-light-salsamania);
+}
+
+@import "./Text.media";

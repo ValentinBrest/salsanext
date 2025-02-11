@@ -1,0 +1,27 @@
+.AboutSalsa {
+    width: 100%;
+    padding: var(--padding-l);
+}
+
+.decr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap {
+    position: relative;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.conga {
+    width: 282px;
+    height: 300px;
+
+    opacity: 0.75;
+}
+
+
+@import "./AboutSalsa.media";

@@ -1,0 +1,28 @@
+.Card {
+    position: relative;
+
+    width: 100%;
+    padding: 40px;
+
+    font: var(--font-ml);
+    font-style: italic;
+    color: var(--inverted-primary-color);
+    text-indent: 20px;
+
+    background-color: var(--bg-color);
+    border-radius: 10px;
+}
+
+.left,
+.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+}
+
+.left {
+    left: 0;
+}
+
+@import "./Card.media";

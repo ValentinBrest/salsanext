@@ -1,0 +1,112 @@
+.Prices {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.meshok {
+    position: absolute;
+    top: -45px;
+    width: 231px;
+    height: 190px;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: [start] 35% [line2] 20% [line3] 20% [line4] 23% [end];
+    grid-template-rows: [row1-start] 100px [row2] 25px [row3] 50px [row4] 75px [row5] 75px [row6] 50px [row7] 50px [row8] 50px [row9] 50px [row10] 25px [row11] 55px [last];
+    gap: 10px;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.title {
+    position: relative;
+    z-index: 4;
+    color: var(--hover-color);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+
+    text-align: center;
+    word-wrap: normal;
+
+    background-color: var(--price-header-color);
+}
+
+.couple {
+    grid-row: 2;
+}
+
+.woman {
+    grid-row: 10;
+}
+
+.part {
+    grid-column: 2 / span 3;
+    
+    color: var(--text-color-light);
+    text-align: center;
+
+    background-color: var(--price-subheader-color);
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    margin-bottom: 0;
+
+    font-style: italic;
+    text-align: center;
+}
+
+.even {
+    background-color: var(--price-color-even);
+}
+
+.evenWoman {
+    grid-column: 2 / span 3;
+    background-color: var(--price-color-even);
+}
+
+.odd {
+    background-color: var(--price-color-odd);
+}
+
+.oddWoman {
+    background-color: var(--price-color-odd);
+}
+
+.old {
+    margin-bottom: 0;
+    font: var(--font-ml);
+    font-style: italic;
+}
+
+.firstClm {
+    background-color: var(--price-header-color);
+}
+
+.note {
+    margin-bottom: 0;
+    font: var(--font-ml);
+    font-style: italic;
+    color: var(--hover-color);
+}
+
+.fff {
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+@import "./Prices.media"

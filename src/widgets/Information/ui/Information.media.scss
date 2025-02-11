@@ -1,0 +1,23 @@
+@media (max-width: 1200px) {
+    .Information {
+        padding: var(--padding-xl);
+    }
+}
+
+@media (max-width: 992px) {
+    .Information {
+        padding: var(--padding-l);
+    }
+}
+
+@media (max-width: 768px) {
+    .Information {
+        padding: var(--padding-m);
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        line-height: 32px;
+    }
+}

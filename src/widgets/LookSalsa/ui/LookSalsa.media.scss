@@ -1,0 +1,56 @@
+@media (max-width: 1200px) {
+    .videoWrap {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+
+        iframe {
+            width: 100%;
+            height: 267px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .LookSalsa {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .videoWrap {
+        iframe {
+            height: 200px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .videoWrap {
+        iframe {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    }
+
+    .title {
+        span {
+            &::before, &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .videoWrap {
+        grid-template-columns: 1fr;
+        iframe {
+            width: 100%;
+            height: 200px;
+        }
+    }
+}

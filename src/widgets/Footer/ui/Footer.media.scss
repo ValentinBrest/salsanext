@@ -1,0 +1,19 @@
+@media (max-width: 992px) {
+    .Footer {
+        max-height: 100%;
+        padding: var(--padding-m);
+    }
+
+    .wrap {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .text {
+        padding: 10px;
+    }
+
+    .socialWrap {
+        padding: 10px;
+    }
+}

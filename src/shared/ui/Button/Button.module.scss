@@ -1,0 +1,212 @@
+.Button {
+    cursor: pointer;
+
+    padding: 5px 15px;
+
+    color: transparent;
+
+    background-image: linear-gradient(45deg, var(--gradient-color-one), var(--gradient-color-two));
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    transition: all 0.35s;
+
+    &:disabled,
+    &[disabled] {
+        pointer-events: none;
+        cursor: not-allowed;
+        opacity: 0.3;
+    }
+}
+
+.clear,
+.clearInverted {
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.clearInverted {
+    color: var(--inverted-primary-color);
+}
+
+.outline {
+    border: 0;
+    outline: 5px solid var(--hover-color);
+
+    &:hover {
+        color: var(--light-color);
+        background: var(--hover-color);
+        outline: 0;
+    }
+}
+
+.background {
+    color: var(--primary-color);
+    background: var(--bg-color);
+    border: none;
+}
+
+.backgroundInverted {
+    color: var(--inverted-primary-color);
+    background: var(--inverted-bg-color);
+    border: none;
+}
+
+.tabs {
+    color: var(--tabs-color);
+    opacity: 0.5;
+    background: var(--tabs-bg-color);
+    border: none;
+
+    &:hover {
+        color: var(--text-color-light);
+        opacity: 0.8;
+        background: var(--hover-color);
+    }
+}
+
+.square {
+    padding: 0;
+}
+
+.square.size_s {
+    width: var(--font-line-s);
+    height: var(--font-line-s);
+}
+
+.square.size_m {
+    width: var(--font-line-m);
+    height: var(--font-line-m);
+}
+
+.square.size_l {
+    width: var(--font-line-l);
+    height: var(--font-line-l);
+}
+
+.square.size_xl {
+    width: var(--font-line-xl);
+    height: var(--font-line-xl);
+}
+
+.size_s {
+    font: var(--font-s);
+}
+
+.size_m {
+    font: var(--font-m);
+}
+
+.size_l {
+    font: var(--font-l);
+}
+
+.size_xl {
+    font: var(--font-xl);
+}
+
+.arrow {
+    cursor: pointer;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    padding: 30px;
+
+    border: none;
+    outline: none;
+}
+
+.arrowWrap {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40px;
+    height: 10px;
+}
+
+.arrowLeft {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform: rotate(35deg);
+
+    float: right;
+    display: block;
+
+    width: 40px;
+    height: 10px;
+
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+.arrowLeft::after {
+    content: "";
+
+    z-index: -1;
+
+    float: right;
+    display: block;
+
+    width: 40px;
+    height: 10px;
+
+    background-color: var(--gold-color);
+    border-radius: 6px 10px 10px 6px;
+
+    transition: all 1s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+}
+
+.arrowRight {
+    position: absolute;
+    top: 10px;
+    left: 26px;
+    transform: rotate(-35deg);
+
+    float: right;
+    display: block;
+
+    width: 40px;
+    height: 10px;
+
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+.arrowRight::after {
+    content: "";
+
+    z-index: -1;
+
+    float: right;
+    display: block;
+
+    width: 40px;
+    height: 10px;
+
+    background-color: var(--gold-color);
+    border-radius: 10px 6px 6px 10px;
+
+    transition: all 1s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+}
+
+.open .arrowLeft::after {
+    transform-origin: center center;
+    transform: rotate(-70deg);
+}
+
+.open .arrowRight::after {
+    transform-origin: center center;
+    transform: rotate(70deg);
+}
+
+@import "./Button.media";

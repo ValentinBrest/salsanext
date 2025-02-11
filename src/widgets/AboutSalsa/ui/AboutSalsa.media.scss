@@ -1,0 +1,32 @@
+@media (max-width: 1200px) {
+    .About {
+        padding: var(--padding-xl);
+    }
+
+    .wrap {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .About {
+        padding: var(--padding-l);
+    }
+
+    .wrap {
+        display: flex;
+    }
+
+    .conga {
+        position: absolute;
+        top: -15px;
+        right: 0;
+        opacity: 0.1;
+    }
+}
+
+@media (max-width: 768px) {
+    .About {
+        padding: var(--padding-m);
+    }
+}

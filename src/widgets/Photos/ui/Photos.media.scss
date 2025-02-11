@@ -1,0 +1,151 @@
+@media (max-width: 1200px) {
+    .Photos {
+        padding: var(--padding-xl);
+    }
+}
+
+@media (max-width: 992px) {
+    .Photos {
+        padding: var(--padding-l);
+
+        .container {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .Photos {
+        padding: var(--padding-m);
+    }
+
+    .gallery {
+        width: unset;
+
+        .cart1 {
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+
+        .cart2 {
+            grid-column: 3/5;
+            grid-row: 1/2;
+        }
+
+        .cart3 {
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+
+        .cart4 {
+            grid-column: 3/5;
+            grid-row: 2/3;
+        }
+
+        .cart5 {
+            grid-column: 1/3;
+            grid-row: 3/5;
+        }
+
+        .cart6 {
+            grid-column: 3/5;
+            grid-row: 3/5;
+        }
+
+        .cart7 {
+            grid-column: 3/7;
+            grid-row: 5/6;
+        }
+
+        .cart8 {
+            grid-column: 1/3;
+            grid-row: 5/6;
+        }
+
+        .cart9 {
+            grid-column: 5/7;
+            grid-row: 2/4;
+        }
+
+        .cart10 {
+            grid-column: 5/7;
+            grid-row: 1/2;
+        }
+
+        .cart11 {
+            grid-column: 5/7;
+            grid-row: 4/5;
+        }
+
+    }
+}
+
+@media (max-width: 390px) {
+    
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 100px);
+        grid-auto-rows: 100px;
+
+        .cart1 {
+            grid-column: 1/3;
+            grid-row: 1/3;
+            img {
+                object-position: top;
+            }
+        }
+
+        .cart2 {
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+
+        .cart3 {
+            grid-column: 1/3;
+            grid-row: 4/6;
+        }
+
+        .cart4 {
+            grid-column: 1/3;
+            grid-row: 6/8;
+        }
+
+        .cart5 {
+            display: none;
+        }
+
+        .cart6 {
+            grid-column: 1/3;
+            grid-row: 10/14;
+            img {
+                object-position: top;
+            }
+        }
+
+        .cart7 {
+            grid-column: 1/3;
+            grid-row: 14/15;
+        }
+
+        .cart8 {
+            grid-column: 1/3;
+            grid-row: 18/20;
+        }
+        
+        .cart9 {
+            grid-column: 1/3;
+            grid-row: 15/18;
+        }
+
+        .cart10 {
+            grid-column: 1/3;
+            grid-row: 20/22;
+        }
+        
+        .cart11 {
+            grid-column: 1/3;
+            grid-row: 8/10;
+        }
+    }
+}

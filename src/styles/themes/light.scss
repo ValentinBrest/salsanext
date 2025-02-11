@@ -1,0 +1,32 @@
+:root {
+//лайт
+    --bg-color: var(--light-color);
+    --inverted-bg-color: var(--dark-color);
+    --bg-color-second: var(--light-color-second);
+    --inverted-bg-color-second: var(--dark-color-second);
+    --bg-color-navbar: var(--light-color);
+    --inverted-bg-color-navbar: var(--dark-color-navbar);
+    --link-color: var(--gold-color);
+    --logo-color: var(--gold-color);
+    --text-color: var(--gold-color);
+    --tabs-bg-color: var(--tabs-bg-color-light);
+    --tabs-color: var(--tabs-color-light);
+    --table-head-bg-color: var(--table-head-bg-color-light);
+    --table-head-color: var(--table-head-color-light);
+    --table-body-bg-color: var(--table-body-bg-color-light);
+    --table-body-color: var(--table-body-color-light);
+    --price-header-color: var(--price-header-color-light);
+    --price-subheader-color: var(--price-subheader-color-light);
+    --price-color-even: var(--price-color-light-even);
+    --price-color-odd: var(--price-color-light-odd);
+    --footer-bg-color: var(--light-color-second);
+    --footer-color: var(--hover-color);
+    --primary-color: var(--text-color-light);
+    --inverted-primary-color: var(--text-color-dark);
+    --secondary-color: #04e016;
+    --inverted-secondary-color: #171ab8;
+    //form
+    --form-bg-color: var(--form-bg-color-light);
+    --salsa-color: var(--salsa-light-color);
+    --hover-color: var(--hover-color-pink);
+}

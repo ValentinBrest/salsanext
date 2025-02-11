@@ -1,0 +1,12 @@
+.Abonement {
+    overflow: hidden;
+    width: 100%;
+    padding: var(--padding-l);
+}
+
+.text {
+    margin-top: 20px;
+    font: var(--font-m);
+}
+
+@import "./Abonement.media";

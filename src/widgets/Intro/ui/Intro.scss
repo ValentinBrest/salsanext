@@ -1,0 +1,8 @@
+.slider {
+    height: calc(100vh - var(--navbar-height));
+    .rsis-container {
+        & div {
+            background-position: center !important;
+        }
+    }
+}

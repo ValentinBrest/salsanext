@@ -1,0 +1,76 @@
+@media (max-width: 1200px) {
+    .WhySchool {
+        padding: var(--padding-xl);
+    }
+
+    .wrap {
+        grid-template-columns: 70% 30%;
+        gap: 10px;
+    }
+
+    .invertedwrap {
+        grid-template-columns: 40% 59%;
+    }
+}
+
+@media (max-width: 992px) {
+    .WhySchool {
+        padding: var(--padding-l);
+    }
+
+    .wrap {
+        display: flex;
+    }
+
+    .bongi {
+        opacity: 0.1;
+    }
+
+    .invertedwrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .maria {
+        align-self: center;
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .WhySchool {
+        padding: var(--padding-m);
+    }
+
+    .wrap {
+        gap: unset;
+    }
+
+    .maria {
+        width: 485px;
+    }
+
+    .card {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .WhySchool {
+        padding: var(--padding-m);
+    }
+
+    .wrap {
+        margin-bottom: 30px;
+    }
+
+    .title {
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 485px) {
+    .maria {
+        width: 100%;
+    }
+}

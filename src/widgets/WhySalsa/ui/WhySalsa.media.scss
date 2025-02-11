@@ -1,0 +1,50 @@
+@media (max-width: 1200px) {
+    .WhySalsa {
+        padding: var(--padding-xl);
+    }
+
+    .wrap {
+        grid-template-columns: 20% 80%;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .WhySalsa {
+        padding: var(--padding-l);
+    }
+
+    .wrap {
+        display: flex;
+    }
+
+    .sax {
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 768px) {
+    .WhySalsa {
+        padding: var(--padding-m);
+    }
+
+    .wrap {
+        gap: unset;
+    }
+
+    .sax {
+        top: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .WhySalsa {
+        padding: var(--padding-m);
+    }
+
+    .sax {
+        top: 70px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}

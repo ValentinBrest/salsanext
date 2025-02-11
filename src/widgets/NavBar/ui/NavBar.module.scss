@@ -1,0 +1,46 @@
+.NavBar {
+    z-index: var(--navbar-z-index);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: var(--navbar-height);
+    padding: 25px;
+
+    background: var(--bg-color-navbar);
+    box-shadow: 0 7px 25px 0 var(--shadow-color);
+}
+
+.wrap {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+.links {
+    margin-left: auto;
+    display: flex;
+    a {
+        text-decoration: none;
+    }
+}
+
+.link {
+    margin-right: 20px;
+    font-weight: 700;
+
+    // font-size: 0;
+    position: relative;
+}
+
+.menu {
+    display: none;
+}
+
+@import "./NavBar.media"

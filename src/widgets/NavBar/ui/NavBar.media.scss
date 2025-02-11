@@ -1,0 +1,143 @@
+@media (max-width: 992px) {
+    .links {
+        display: none;
+
+        .wrap {
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            justify-content: right;
+
+            height: 100%;
+        }
+    }
+
+    .btnBurger {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 50px;
+        height: 50px;
+        padding: 25px;
+    }
+
+    .burger {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 40px;
+        height: 5px;
+        
+        background: var(--hover-color);
+        border-radius: 3px;
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            top: -7px;
+            transform: translateY(-50%);
+
+            display: block;
+
+            width: 30px;
+            height: 5px;
+
+            background: var(--hover-color);
+            border-radius: 3px;
+
+            transition: all 0.3s;
+        }
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 7px;
+            transform: translateY(50%);
+
+            display: block;
+
+            width: 50px;
+            height: 5px;
+
+            background: var(--hover-color);
+            border-radius: 3px;
+
+            transition: all 0.3s;
+        }
+
+        &.active {
+            &::after {
+                width: 50px;
+            }
+
+            &::before {
+                width: 30px;
+            }
+        }
+    }
+
+    .menu {
+        position: fixed;
+        z-index: var(--menu-z-index);
+        top: calc(-100% - var(--navbar-height));
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding-top: 30px;
+
+        background: var(--bg-color);
+
+        transition: top 0.5s;
+    }
+
+    .guitar {
+        position: absolute;
+        bottom: 100px;
+        transform: rotate(45deg) ;
+
+        width: 200px;
+
+        opacity: 0.3;
+    }
+
+    .visible {
+        position: fixed;
+        z-index: var(--menu-z-index);
+        top: var(--navbar-height);
+        
+        width: 100%;
+
+        background: var(--bg-color);
+
+        transition: top 0.5s;
+    }
+
+    .mobileLink {
+        margin-bottom: 30px;
+        font: var(--font-l);
+        text-decoration: none;
+        position: relative;
+    }
+}
+
+@media (max-width: 576px) {
+    .NavBar {
+        height: calc(var(--navbar-height-mobile));
+        padding: 5px;
+    }
+
+    .visible {
+        top: calc(var(--navbar-height-mobile));
+    }
+}

@@ -1,0 +1,60 @@
+@media (max-width: 1200px) {
+    .Form {
+        padding: var(--padding-xl);
+    }
+    .formImg {
+        height: 670px;
+    }
+}
+
+@media (max-width: 992px) {
+    .Photos {
+        padding: var(--padding-l);
+    }
+
+    .wrap {
+        grid-template-columns: 0.9fr 0.9fr;
+        gap: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .Form {
+        padding: var(--padding-m);
+    }
+
+    .wrap {
+        display: flex;
+        height: 100%;
+    }
+    .formImg {
+        display: none;
+    }
+
+    .direct {
+        &:hover::after {
+            left: -180px;
+            bottom: -22px;
+            }
+    }
+}
+
+@media (max-width: 576px) {
+    .Form {
+        padding: var(--padding-m);
+    }
+
+    .insta {
+        height: 72px;
+        width: 170px;
+    }
+
+    .telega {
+        height: 50px;
+        width: 50px;
+    }
+
+    .wantToDance {
+        font-style: normal;
+    }
+}
