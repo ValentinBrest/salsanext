@@ -4,20 +4,15 @@
     width: 100%;
     max-height: 150px;
     padding: var(--padding-xl);
-
-    color: var(--footer-color);
-
-    background: var(--footer-bg-color);
 }
 
 .wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font: var(--font-m);
 }
 
-.socialWrap {
+.social {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +25,6 @@
 
 .telegram {
     width: 30px;
-    fill: rgb(1 204 255);
 }
 
 .tiktok {
@@ -51,7 +45,7 @@
     display: flex;
     align-items: center;
 
-    color: var(--footer-color);
+    color: var(--primary-color);
     text-decoration: none;
     
     &::before {
@@ -66,7 +60,7 @@
         width: 0;
         height: 2px;
 
-        background: var(--hover-color);
+        background: var(--primary-color);
 
         transition: all 0.3s ease-in-out;
     }
@@ -89,10 +83,9 @@
     width: 20px;
     height: 20px;
     margin-right: 10px;
-    // color: var(--hover-color);
 }
 
-.wrapText {
+.info {
     display: flex;
     flex-direction: column;
 }
@@ -106,9 +99,7 @@
     position: relative;
     height: 100%;
     text-align: center;
-    display: inline-block;
-    font: var(--font-m);
-    
+    display: inline-block; 
 
     &::after {
         width: 230px;

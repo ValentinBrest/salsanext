@@ -8,7 +8,6 @@ export enum TextTheme {
     ERROR = 'error',
     WITHOUT = 'without',
     ITALIC = 'italic',
-    THREED = 'threeD'
 }
 
 export enum TextAlign {
@@ -21,7 +20,7 @@ interface TextProps {
     className?: string;
     title?: ReactNode;
     text?: ReactNode;
-    hardTitle?: any;
+    hardTitle?: Array<string | JSX.Element>;
     epigraph?: ReactNode;
     subTitle?: string;
     theme?: TextTheme;

@@ -1,4 +1,4 @@
-import { Abonement } from "@/widgets/Abonement";
+import { Prices } from "@/widgets/Prices";
 import { AboutSalsa } from "@/widgets/AboutSalsa";
 import { Questions } from "@/widgets/Questions";
 import { Form } from "@/widgets/Form";
@@ -7,8 +7,8 @@ import { Intro } from "@/widgets/Intro";
 import { Lessons } from "@/widgets/Lessons";
 import { LookSalsa } from "@/widgets/LookSalsa";
 import { Photos } from "@/widgets/Photos";
-import { WhySalsa } from "@/widgets/WhySalsa";
-import { WhySchool } from "@/widgets/WhySchool";
+import { Salsa } from "@/widgets/Salsa";
+import { School } from "@/widgets/School";
 
 
 export default function Home() {
@@ -17,15 +17,15 @@ export default function Home() {
   const bgFirst = 'var(--bg-color)';
   return (
     <main>
-      <Intro/>
+      {/* <Intro/> */}
       <AboutSalsa/>
-      <WhySalsa backgroundColor={bgSecond}/>
-      <WhySchool backgroundColor={bgFirst} backgroundColorCard={bgSecond}/>
+      <Salsa backgroundColor={bgSecond}/>
+      <School backgroundColor={bgFirst} backgroundColorCard={bgSecond}/>
       <Lessons backgroundColor={bgSecond}/>
-      <Abonement backgroundColor={bgFirst}/>
+      <Prices backgroundColor={bgFirst}/>
       <LookSalsa backgroundColor={bgSecond}/>
       
-      <Photos backgroundColor={bgFirst}/>
+      {/* <Photos backgroundColor={bgFirst}/> */}
       <Questions backgroundColor={bgSecond}/>
       <Information backgroundColor={bgFirst}/>
       <Form backgroundColor={bgSecond}/>

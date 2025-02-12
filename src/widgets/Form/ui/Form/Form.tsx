@@ -29,7 +29,7 @@ export const Form = ({ backgroundColor }: FormProps) => {
                         <span>{form.message}</span>
                     </div>
                     <Text className={cl.withoutMargin} text={form.toDirect} />
-                    <div className={cl.wrapSocial}>
+                    <div className={cl.social}>
                         <a
                             href='https://www.instagram.com/salsabrest/'
                             aria-label='Перейти в инстаграм'

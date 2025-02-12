@@ -18,8 +18,7 @@ export const AboutSalsa = ({ backgroundColor }: AboutSalsaProps) => {
             classWrap={cl.wrap}
         >
             <div className={cl.decr}>
-                <Text text={aboutSalsa.text1} />
-                <Text text={aboutSalsa.text2} />
+                {aboutSalsa.map(text => <Text text={text} />)}
             </div>
             <Image src={conga} className={cl.conga} alt='конги' />
         </Template>

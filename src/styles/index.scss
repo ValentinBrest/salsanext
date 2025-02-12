@@ -10,7 +10,8 @@ body {
     -o-user-select: none;
     user-select: none;
 
-    font: var(--font-l);
+    font-size: var(--font-size-m);
+    line-height: var(--font-line-m);
     color: var(--primary-color);
 
     -webkit-tap-highlight-color: rgb(255 255 255 / 0%);
@@ -96,7 +97,8 @@ body {
 .link {
     position: relative;
 
-    font: var(--font-m);
+    font-size: var(--font-size-m);
+    line-height: var(--font-line-m);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -104,9 +106,9 @@ body {
     background-image:
         linear-gradient(
             to right,
-            var(--hover-color),
-            var(--hover-color) 50%,
-            var(--link-color) 50%
+            var(--primary-color),
+            var(--primary-color) 50%,
+            var(--primary-color) 50%
         );
     background-position: -100%;
     -webkit-background-clip: text;
@@ -129,7 +131,7 @@ body {
         width: 0;
         height: 3px;
 
-        background: var(--hover-color);
+        background: var(--primary-color);
 
         transition: all 0.3s ease-in-out;
     }

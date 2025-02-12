@@ -44,7 +44,7 @@ export const Questions = ({
                 <QuestionCard
                     {...item}
                     key={item.id}
-                    className={cl.AnswersCard}
+                    className={cl.QuestionCard}
                 />
             ))}
         </Template>

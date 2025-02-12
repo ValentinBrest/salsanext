@@ -1,7 +1,7 @@
 .title {
     margin-bottom: var(--margin-m);
-
-    font: var(--font-title-m);
+    font-size: var(--font-size-title-m);
+    line-height: var(--font-line-title-m);
     font-weight: 700;
     font-style: inherit;
     color: var(--gold-color);
@@ -60,7 +60,8 @@
 .subTitle {
     padding: 0 10px;
 
-    font: var(--font-xl);
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     font-weight: 700;
     font-style: inherit;
     color: var(--inverted-primary-color);
@@ -72,7 +73,8 @@
 
     margin-bottom: var(--margin-s);
 
-    font: var(--font-ml);
+    font-size: var(--font-size-ml);
+    line-height: var(--font-line-ml);
     font-style: inherit;
     color: var(--inverted-primary-color);
 }
@@ -84,7 +86,8 @@
     width: 400px;
     padding-bottom: 30px;
 
-    font: var(--font-m);
+    font-size: var(--font-size-ml);
+    line-height: var(--font-line-ml);
     color: var(--epigraph-color);
 }
 
@@ -94,20 +97,21 @@
 
 .error {
     margin-bottom: unset;
-    font: var(--font-m);
+    font-size: var(--font-size-m);
+    line-height: var(--font-line-m);
 
     .title {
         color: var(--red-light);
     }
 
     .text {
-        font: var(--font-m);
         color: var(--red-light);
     }
 }
 
 .without {
-    font: var(--font-title-m);
+    font-size: var(--font-size-title-m);
+    line-height: var(--font-line-title-m);
     font-weight: 700;
 
     span {
@@ -136,12 +140,6 @@
 .italic {
     font-style: italic;
     letter-spacing: 0.5px;
-}
-
-.threeD {
-    font: var(--font-ml);
-    font-style: inherit;
-    color: var(--text-color-light-salsamania);
 }
 
 @import "./Text.media";

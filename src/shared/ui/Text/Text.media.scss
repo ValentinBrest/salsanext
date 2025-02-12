@@ -1,12 +1,14 @@
 @media (max-width: 1200px) {
     .title {
-        font: var(--font-title-l);
+        font-size: var(--font-size-title-l);
+        line-height: var(--font-line-title-l);
         font-weight: 700;
         text-align: center;
     }
 
     .subTitle {
-        font: var(--font-title-xs);
+        font-size: var(--font-size-title-xs);
+        line-height: var(--font-line-title-xs);
         font-weight: 700;
     }
 
@@ -17,38 +19,44 @@
 
 @media (max-width: 992px) {
     .title {
-        font: var(--font-title-m);
+        font-size: var(--font-size-title-m);
+        line-height: var(--font-line-title-m);
         font-weight: 700;
         text-align: center;
     }
 
     .subTitle {
-        font: var(--font-xl);
+        font-size: var(--font-size-xl);
+        line-height: var(--font-line-xl);
         font-weight: 700;
     }
 
     .text {
-        font: var(--font-ml);
+        font-size: var(--font-size-ml);
+        line-height: var(--font-line-ml);
         text-align: center;
     }
 }
 
 @media (max-width: 768px) {
     .title {
-        font: var(--font-title-s);
+        font-size: var(--font-size-title-s);
+        line-height: var(--font-line-title-s);
         font-weight: 700;
         text-align: center;
     }
 
     .subTitle {
-        font: var(--font-l);
+        font-size: var(--font-size-l);
+        line-height: var(--font-line-l);
         font-weight: 700;
     }
 }
 
 @media (max-width: 576px) {
     .title {
-        font: var(--font-xl);
+        font-size: var(--font-size-xl);
+        line-height: var(--font-line-xl);
         font-weight: 700;
         text-align: center;
 
@@ -64,16 +72,19 @@
     }
 
     .text {
-        font: var(--font-m);
+        font-size: var(--font-size-m);
+        line-height: var(--font-line-m);
     }
 
     .epigraph {
         width: 280px;
-        font: var(--font-sm);
+        font-size: var(--font-size-sm);
+        line-height: var(--font-line-sm);
     }
 
     .subTitle {
-        font: var(--font-l);
+        font-size: var(--font-size-l);
+        line-height: var(--font-line-l);
         font-weight: 700;
         text-align: center;
     }

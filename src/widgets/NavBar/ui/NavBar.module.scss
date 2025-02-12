@@ -8,8 +8,10 @@
     width: 100%;
     height: var(--navbar-height);
     padding: 25px;
+    font-size: var(--font-size-ml);
+    line-height: var(--font-line-ml);
 
-    background: var(--bg-color-navbar);
+    background: var(--bg-color);
     box-shadow: 0 7px 25px 0 var(--shadow-color);
 }
 
@@ -33,9 +35,7 @@
 
 .link {
     margin-right: 20px;
-    font-weight: 700;
 
-    // font-size: 0;
     position: relative;
 }
 

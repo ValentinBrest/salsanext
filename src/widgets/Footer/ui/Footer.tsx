@@ -19,13 +19,13 @@ export const Footer = ({ className = '', backgroundColor }: FooterProps) => {
         >
             <div className='container'>
                 <div className={cl.wrap}>
-                    <div className={cl.wrapText}>
+                    <div className={cl.info}>
                         <span className={cl.text}>
                             {footer.name}
                         </span>
                         <span className={cl.text}>{footer.unp}</span>
                     </div>
-                    <div className={cl.socialWrap}>
+                    <div className={cl.social}>
                         <a
                             href={'https://www.instagram.com/salsabrest/'}
                             aria-label='Перейти в инстаграм'
@@ -63,7 +63,7 @@ export const Footer = ({ className = '', backgroundColor }: FooterProps) => {
                                 />
                         </a>
                     </div>
-                    <div className={cl.contactWrap}>
+                    <div>
                         <a href={`tel:${footer.tel}`} className={cl.phoneWrap}>
                             <Image
                                 className={cl.phone}

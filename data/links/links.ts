@@ -17,7 +17,7 @@ export const links = [
         id: 1,
         name: 'О школе',
         to: '/',
-        scroll: 'about',
+        scroll: 'school',
     },
     {
         id: 3,

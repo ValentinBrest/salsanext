@@ -3,20 +3,20 @@ import Image from 'next/image';
 import gold from '../../../../public/img/newYear/gold.png';
 import saxophone from '../../../../public/img/instuments/saxophone.webp';
 import partSnow from '../../../../public/img/newYear/partSnow.webp';
-import { whySalsa } from '../../../../data/whySalsa';
-import cl from './WhySalsa.module.scss';
+import { salsa } from '../../../../data/salsa';
+import cl from './Salsa.module.scss';
 import { Accordion } from '@/shared/ui/Accordion/Accordion';
 import { Template } from '@/shared/ui/Template/Template';
 
-interface WhySalsaProps {
+interface SalsaProps {
     backgroundColor?: string;
     isNewYear?: boolean;
 }
 
-export const WhySalsa = ({
+export const Salsa = ({
     backgroundColor,
     isNewYear = false,
-}: WhySalsaProps) => {
+}: SalsaProps) => {
     const O = <Image src={gold} alt='o' className={'toy small'} />;
 
     return (
@@ -30,9 +30,9 @@ export const WhySalsa = ({
             )}
             <Template
                 backgroundColor={backgroundColor}
-                className={cl.WhySalsa}
+                className={cl.Salsa}
                 classWrap={cl.wrap}
-                id={'whySalsa'}
+                id={'salsa'}
                 amount={0.2}
             >
                 <Image src={saxophone} className={cl.sax} alt='саксофон' />
@@ -41,20 +41,20 @@ export const WhySalsa = ({
                     {isNewYear ? (
                         <Text hardTitle={['П', O, 'чему сальса?']} />
                     ) : (
-                        <Text title={whySalsa.title} />
+                        <Text title={salsa.title} />
                     )}
                     <Text
                         align={TextAlign.RIGHT}
                         className={cl.epigraph}
-                        epigraph={whySalsa.epigraph.text}
-                        author={whySalsa.epigraph.author}
+                        epigraph={salsa.epigraph.text}
+                        author={salsa.epigraph.author}
                     />
                     <Accordion
                         height='800px'
                         background={backgroundColor}
-                        linkId='whySalsa'
+                        linkId='salsa'
                     >
-                        {whySalsa.text.map((item, index) => (
+                        {salsa.text.map((item, index) => (
                             <Text
                                 key={index}
                                 align={TextAlign.RIGHT}

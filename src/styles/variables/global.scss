@@ -1,44 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,300&display=swap");
-
 :root {
-    --font-family-main: "Jost", "Times New Roman", sans-serif;
+    
 
     // TEXT
+
+    // S
     --font-size-s: 12px;
     --font-line-s: 16px;
-    --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
+    // SM
     --font-size-sm: 14px;
     --font-line-sm: 18px;
-    --font-sm: var(--font-size-sm) / var(--font-line-sm) var(--font-family-main);
+    // M
     --font-size-m: 17px;
     --font-line-m: 24px;
-    --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+    // ML
     --font-size-ml: 20px;
     --font-line-ml: 28px;
-    --font-ml: var(--font-size-ml) / var(--font-line-ml) var(--font-family-main);
+    // L
     --font-size-l: 24px;
     --font-line-l: 32px;
-    --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+    // XL
     --font-size-xl: 32px;
     --font-line-xl: 40px;
-    --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
     // TITLE
+    // XS
     --font-size-title-xs: 40px;
     --font-line-title-xs: 48px;
-    --font-title-xs: var(--font-size-title-xs) / var(--font-line-title-xs) var(--font-family-main);
+    // S
     --font-size-title-s: 48px;
     --font-line-title-s: 56px;
-    --font-title-s: var(--font-size-title-s) / var(--font-line-title-s) var(--font-family-main);
+    // M
     --font-size-title-m: 56px;
     --font-line-title-m: 64px;
-    --font-title-m: var(--font-size-title-m) / var(--font-line-title-m) var(--font-family-main);
+    // L
     --font-size-title-l: 64px;
     --font-line-title-l: 72px;
-    --font-title-l: var(--font-size-title-l) / var(--font-line-title-l) var(--font-family-main);
+    // XL
     --font-size-title-xl: 72px;
     --font-line-title-xl: 80px;
-    --font-title-xl: var(--font-size-title-xl) / var(--font-line-title-xl) var(--font-family-main);
 
     // Размеры
     --navbar-height: 80px;
@@ -48,22 +47,23 @@
     --light-color: #e9e9e9;
     --light-color-second: #fff;
 
-    --light-color-salsamania: #000000;
+    --gold-color: #d39f64;
 
     --dark-color: #000000;
     --dark-color-second: #02000a;
 
-    --dark-color-navbar: #040a22;
+    --hover-color-light: rgb(71 71 71 / 24.8%);
+    --hover-color-dark: rgb(71 71 71 / 24.8%);
 
-    --gold-color: #d39f64;
+    
     --shadow-color: rgb(171 0 157 / 22.6%);
     --text-color-light: #f0f0f0e3;
     --text-color-light-salsamania: #d39f64;
     --text-color-dark: #4d4d4d;
     --hover-color-pink: #e52d87;
     --hover-color-salsamania: #d39f64;
-    --link-color-light: #cacacada;
-    --link-color-light-salsamania:#d39f64;
+    
+    
     --link-color-dark: #716b70;
     --epigraph-color: #e2a45d;
     --red-light: #dd0025;

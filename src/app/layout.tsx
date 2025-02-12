@@ -1,9 +1,15 @@
 import type { Metadata } from 'next';
-import { jost } from '@/app/ui/fonts';
 import '../styles/index.scss';
 import { NavBar } from '@/widgets/NavBar';
 import { Footer } from '@/widgets/Footer';
-
+import { Jost } from 'next/font/google';
+ 
+export const jost = Jost({ 
+    weight: ['300', '400', '700'],
+    style: ['normal', 'italic'],
+    subsets: ['latin'],
+    display: 'swap', 
+});
 
 export const metadata: Metadata = {
     title: 'SalsaBrest',

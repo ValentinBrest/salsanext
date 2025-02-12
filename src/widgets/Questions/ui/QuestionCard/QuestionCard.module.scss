@@ -2,14 +2,12 @@
     width: 100%;
     padding-top: 20px;
 
-    color: var(--table-body-color);
-
     border-radius: 5px;
 
     transition: all 0.3s;
 
     &:hover {
-        background-color: rgb(71 71 71 / 24.8%);
+        background-color: var(--hover-color);
     }
 }
 
@@ -23,9 +21,7 @@
     height: 75px;
     padding: 0 10px;
 
-    color: var(--table-body-color);
-
-    border-bottom: 1px solid var(--hover-color);
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .text {
@@ -88,13 +84,13 @@
     &::before {
         transform: translate(-50%, -50%) rotate(45deg);
         opacity: 1;
-        background-color: var(--hover-color);
+        background-color: var(--primary-color);
     }
 
     &::after {
         transform: translate(-50%, -50%) rotate(45deg);
         opacity: 1;
-        background-color: var(--hover-color);
+        background-color: var(--primary-color);
     }
 }
 
@@ -104,7 +100,7 @@
 }
 
 .open {
-    background-color: rgb(71 71 71 / 24.8%);
+    background-color: var(--hover-color);
 }
 
 @import "./QuestionCard.media";
