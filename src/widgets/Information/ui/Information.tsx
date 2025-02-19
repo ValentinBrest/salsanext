@@ -34,9 +34,9 @@ export const Information = ({
                     )}
                     <Text className={cl.title} title={information.title} />
 
-                    {information.text.map((item, intex) => (
+                    {information.text.map((item, index) => (
                         <Text
-                            key={intex}
+                            key={index}
                             className={cl.text}
                             align={TextAlign.LEFT}
                             text={item}

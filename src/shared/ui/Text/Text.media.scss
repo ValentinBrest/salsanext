@@ -1,19 +1,8 @@
 @media (max-width: 1200px) {
-    .title {
-        font-size: var(--font-size-title-l);
-        line-height: var(--font-line-title-l);
-        font-weight: 700;
-        text-align: center;
-    }
-
     .subTitle {
         font-size: var(--font-size-title-xs);
         line-height: var(--font-line-title-xs);
         font-weight: 700;
-    }
-
-    .text {
-        font: var(--font-ml);
     }
 }
 
@@ -31,10 +20,9 @@
         font-weight: 700;
     }
 
-    .text {
-        font-size: var(--font-size-ml);
-        line-height: var(--font-line-ml);
-        text-align: center;
+    .epigraph {
+        font-size: var(--font-size-m);
+        line-height: var(--font-line-m);
     }
 }
 

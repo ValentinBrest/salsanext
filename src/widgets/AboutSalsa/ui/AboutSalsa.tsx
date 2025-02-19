@@ -14,11 +14,11 @@ export const AboutSalsa = ({ backgroundColor }: AboutSalsaProps) => {
         <Template
             backgroundColor={backgroundColor}
             className={cl.AboutSalsa}
-            id={'salsa'}
+            id={'about'}
             classWrap={cl.wrap}
         >
             <div className={cl.decr}>
-                {aboutSalsa.map(text => <Text text={text} />)}
+                {aboutSalsa.map((text, index) => <Text text={text} key={index}/>)}
             </div>
             <Image src={conga} className={cl.conga} alt='конги' />
         </Template>

@@ -5,6 +5,7 @@ import { Text, TextTheme } from '@/shared/ui/Text/Text';
 import Image from 'next/image';
 import meshok from '../../../../../public/img/newYear/meshok.webp';
 import cl from './PriceBlock.module.scss';
+import { useEffect, useState } from 'react';
 
 interface PriceBlock {
     header: ({
@@ -31,7 +32,12 @@ export const PriceBlock = ({
     isNewYear = false,
 }: PriceBlockProps) => {
     const isTabletScreen = useMediaQuery({ query: '(max-width: 768px)' });
-    const isMobileScreen = useMediaQuery({ query: '(max-width: 378px)' });
+    const [isMobile, setIsMobile] = useState(false);
+
+     useEffect(() => {
+            setIsMobile(isTabletScreen);
+          }, [isTabletScreen]);
+          
     return (
         <div
             style={{ background: backgroundColor }}
@@ -42,7 +48,7 @@ export const PriceBlock = ({
                 <Image src={meshok} className={cl.meshok} alt='meshok' />
             )}
             <div className={cl.wrap}>
-                {!isTabletScreen && <div />}
+                {!isMobile && <div />}
                 {prices.header.map((item, index) => (
                     <div
                         key={index}
@@ -50,7 +56,7 @@ export const PriceBlock = ({
                     >
                         <Text
                             text={
-                                index === 0 && isMobileScreen
+                                index === 0 && isMobile
                                     ? '"Студен-ческий"'
                                     : item.name
                             }
@@ -77,7 +83,7 @@ export const PriceBlock = ({
                                     [cl.even]: !!(index % 2),
                                     [cl.odd]: !(index % 2),
                                     [cl.firstClm]: !(index % 4),
-                                    [cl.third]: isTabletScreen && !(index % 4),
+                                    [cl.third]: isMobile && !(index % 4),
                                 },
                                 [className]
                             )}
@@ -86,7 +92,6 @@ export const PriceBlock = ({
                         />
                     ))
                 )}
-                {!isTabletScreen && <div />}
             </div>
         </div>
     );

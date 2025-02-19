@@ -1,3 +1,4 @@
+
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { ButtonHTMLAttributes, FC } from 'react';
 
@@ -11,7 +12,6 @@ export enum ButtonTheme {
     BACKGROUND_INVERTED = 'backgroundInverted',
     TABS = 'tabs',
     ARROW = 'arrow',
-    PERSPECTIVE = 'perspective',
 }
 export const enum ButtonSize {
     S = 'size_s',

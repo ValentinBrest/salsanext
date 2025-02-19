@@ -1,30 +1,41 @@
 'use client';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { memo } from 'react';
+import { memo, ReactNode } from 'react';
 import { Link as ReactLinkScroll } from 'react-scroll';
 import Link from 'next/link';
 
 interface LinkScrollProps {
     to: string;
-    href: string;
-    name: string;
+    href?: string;
+    name?: string;
     className?: string;
-    onClick?: () => void
+    onClick?: () => void;
+    isDrawerLink?: boolean;
+    children?: ReactNode;
 }
 
 export const LinkScroll = memo((props: LinkScrollProps) => {
-    const { to, href, className = '', name } = props;
+    const {
+        to,
+        className = '',
+        name,
+        isDrawerLink = false,
+        onClick,
+        children
+    } = props;
 
     return (
         <ReactLinkScroll
             to={to}
-            href={href}
             smooth={true}
-            className={classNames('', {}, [className])}
+            className={classNames(
+                '',
+                { drawerLink: isDrawerLink, link: !isDrawerLink },
+                [className]
+            )}
+            onClick={onClick}
         >
-            <Link href={`/#${to}`} scroll={false} className='link'>
-                {name}
-            </Link>
+            {name || children}
         </ReactLinkScroll>
     );
 });

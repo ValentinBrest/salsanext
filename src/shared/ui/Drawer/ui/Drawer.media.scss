@@ -1,0 +1,21 @@
+
+@media (max-width: 992px) {
+    .Drawer {
+        .content {
+            top: 30px;
+            left: -30px;
+        }
+    }
+
+
+    .name {
+        margin: 0 0 30px 22px;
+        opacity: 0.8;
+    }
+
+    .link {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-decoration: none;
+    }
+}

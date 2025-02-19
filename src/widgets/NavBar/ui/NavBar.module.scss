@@ -28,15 +28,10 @@
 .links {
     margin-left: auto;
     display: flex;
+    align-items: center;
     a {
         text-decoration: none;
     }
-}
-
-.link {
-    margin-right: 20px;
-
-    position: relative;
 }
 
 .menu {

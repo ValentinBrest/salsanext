@@ -16,7 +16,9 @@ import ph10 from '../../../../public/img/gallery/10.webp';
 import ph11 from '../../../../public/img/gallery/11.webp';
 
 import './PhotosModal.scss';
-import { Modal } from '@/shared/ui/Modal/Modal';
+import dynamic from 'next/dynamic';
+
+const Modal = dynamic(() => import('../../../shared/ui/Modal/Modal'), { ssr: false });
 
 interface PhotosModalProps {
     className?: string;

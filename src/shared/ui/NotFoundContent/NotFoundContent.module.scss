@@ -1,0 +1,29 @@
+.NotFoundContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.btn {
+    margin-top: 10px;
+
+    &:hover {
+        background: var(--primary-color);
+        .link {
+            color: var(--bg-color);
+        }
+    }
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}

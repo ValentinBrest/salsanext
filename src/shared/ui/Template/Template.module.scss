@@ -1,7 +1,6 @@
-.Template {
-    
+@media (max-width: 576px) {
+    .Template {
+        font-size: var(--font-size-m);
+        line-height: var(--font-line-m);
+    }
 }
-
-
-
-@import "./Template.media";

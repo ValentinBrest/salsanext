@@ -11,8 +11,6 @@ interface SliderProps {
 
 export const Slider = memo((props: SliderProps) => {
     const isMobileScreen = useMediaQuery({ query: '(max-width: 576px)' });
-    // const isTabletScreen = useMediaQuery({ query: '(max-width: 768px)' });
-    // const isLaptopScreen = useMediaQuery({ query: '(max-width: 992px)' });
     const {
         images,
         mobileImages,

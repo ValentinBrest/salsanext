@@ -15,7 +15,7 @@
 
     .btnBurger {
         position: absolute;
-        left: 50%;
+        left: calc(50%);
         transform: translate(-50%);
         width: 50px;
         height: 50px;
@@ -24,8 +24,6 @@
 
     .burger {
         position: absolute;
-        left: 50%;
-        transform: translate(-50%);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -121,14 +119,6 @@
         background: var(--bg-color);
 
         transition: top 0.5s;
-    }
-
-    .mobileLink {
-        margin-bottom: 30px;
-        font-size: var(--font-size-l);
-        line-height: var(--font-line-l);
-        text-decoration: none;
-        position: relative;
     }
 }
 

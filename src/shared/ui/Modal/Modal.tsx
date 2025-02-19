@@ -16,7 +16,7 @@ interface ModalProps {
     isMounted?: boolean;
 }
 
-export const Modal = (props: ModalProps) => {
+const Modal = (props: ModalProps) => {
     const {
         className = '',
         children,
@@ -59,7 +59,7 @@ export const Modal = (props: ModalProps) => {
     }, [isOpen, onKeyDown]);
 
     return (
-        <Portal>
+        <Portal element={document.body}>
             {isOpen && (
                 <div className={classNames(cl.Modal, mods, [className])}>
                     <div className={cl.overlay} onClick={closeHandler}>
@@ -87,3 +87,5 @@ export const Modal = (props: ModalProps) => {
         </Portal>
     );
 };
+
+export default Modal

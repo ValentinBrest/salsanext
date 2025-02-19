@@ -1,0 +1,52 @@
+.Drawer {
+    position: relative;
+    cursor: pointer;
+
+    .content {
+        position: absolute;
+        display: none;
+        
+        background-color: var(--bg-color-second);
+        border-radius: 5px;
+        font-size: 10px;
+        transform: translateY(-10px);
+        transition: transform 0.2s ease
+    }
+
+    &:hover {
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            transform: translateY(0);
+            width: 220px;
+            z-index: 10;
+        }
+    } 
+}
+
+.name {
+    font-size: var(--font-size-m);
+    // line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.link {
+    padding-left: 5px;
+    &:hover {
+        border-radius: 5px;
+        background: var(--bg-color);
+    }
+}
+
+@import "./Drawer.media";

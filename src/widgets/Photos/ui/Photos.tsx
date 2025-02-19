@@ -44,7 +44,6 @@ export const Photos = ({ backgroundColor, isNewYear = false }: PhotosProps) => {
     }, []);
 
     const onOpenModal = useCallback((e) => {
-        console.log(e.target.dataset.order);
         setCurImg(e.target.dataset.order);
         setIsModalOpen(true);
     }, []);

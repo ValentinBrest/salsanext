@@ -6,7 +6,7 @@
 
 .meshok {
     position: absolute;
-    top: -45px;
+    top: -82px;
     width: 231px;
     height: 190px;
 }
@@ -21,11 +21,6 @@
     margin-top: 20px;
 }
 
-.title {
-    position: relative;
-    z-index: 4;
-    color: var(--hover-color);
-}
 
 .header {
     display: flex;
@@ -41,23 +36,6 @@
     background-color: var(--price-header-color);
 }
 
-.couple {
-    grid-row: 2;
-}
-
-.woman {
-    grid-row: 10;
-}
-
-.part {
-    grid-column: 2 / span 3;
-    
-    color: var(--text-color-light);
-    text-align: center;
-
-    background-color: var(--price-subheader-color);
-}
-
 .body {
     display: flex;
     align-items: center;
@@ -65,46 +43,32 @@
 
     height: 100%;
     margin-bottom: 0;
-
     font-style: italic;
     text-align: center;
 }
 
 .even {
     background-color: var(--price-color-even);
-}
-
-.evenWoman {
-    grid-column: 2 / span 3;
-    background-color: var(--price-color-even);
+    font-weight: 600;
 }
 
 .odd {
     background-color: var(--price-color-odd);
-}
-
-.oddWoman {
-    background-color: var(--price-color-odd);
+    font-weight: 600;
 }
 
 .old {
     margin-bottom: 0;
-    font-size: var(--font-size-ml);
-    line-height: var(--font-line-ml);
+    font-size: var(--font-size-m);
+    line-height: var(--font-line-m);
     font-style: italic;
 }
 
 .firstClm {
     background-color: var(--price-header-color);
+    font-weight: 400;
 }
 
-.note {
-    margin-bottom: 0;
-    font-size: var(--font-size-ml);
-    line-height: var(--font-line-ml);
-    font-style: italic;
-    color: var(--hover-color);
-}
 
 .fff {
     margin-bottom: 0;

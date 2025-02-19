@@ -34,6 +34,20 @@ body {
     background: var(--bg-color);
 }
 
+.notFound {
+    height: calc(100vh - 150px - var(--navbar-height));
+    background: var(--bg-color-second);
+    padding: var(--padding-l);
+
+    .wrap {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 .modal {
     position: absolute;
     width: 100vh;
@@ -53,30 +67,10 @@ body {
     flex: 1 0 auto;
 }
 
-.pageup {
-    cursor: pointer;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
+main {
+    position: relative;
 }
 
-.up {
-    display: block;
-
-    width: 40px;
-    height: 40px;
-
-    opacity: 0;
-
-    transition: all 0.3s;
-    fill: "#e52d87a3";
-}
-
-.activeScroll {
-    .up {
-        opacity: 1;
-    }
-}
 
 .toy {
     width: 30px;
@@ -98,10 +92,10 @@ body {
     position: relative;
 
     font-size: var(--font-size-m);
-    line-height: var(--font-line-m);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
+    cursor: pointer;
 
     background-image:
         linear-gradient(
@@ -123,13 +117,13 @@ body {
         content: "";
 
         position: absolute;
-        bottom: -3px;
+        bottom: -1px;
         left: 0;
 
         display: block;
 
         width: 0;
-        height: 3px;
+        height: 2px;
 
         background: var(--primary-color);
 
@@ -151,6 +145,47 @@ body {
     }
 }
 
+.navbarLink {
+    margin-right: 20px;
+    position: relative;
+}
+
+.drawerLink {
+    font-size: var(--font-size-m);
+    text-transform: none;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+.pageup {
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.pageup.link:hover::before {
+    display: none;
+}
+
+.up {
+    display: block;
+
+    width: 40px;
+    height: 40px;
+
+    opacity: 0;
+
+    transition: all 0.3s;
+}
+
+.activeScroll {
+    .up {
+        opacity: 1;
+    }
+}
+
 @media (max-width: 1200px) {
     .container {
         width: 960px;
@@ -160,6 +195,15 @@ body {
 @media (max-width: 992px) {
     .container {
         width: 720px;
+    }
+
+    .navbarLink {
+        margin-right: 0;
+        margin-bottom: 30px;
+        font-size: var(--font-size-m);
+        line-height: var(--font-line-m);
+        text-decoration: none;
+        position: relative;
     }
 }
 
@@ -207,16 +251,3 @@ body {
         height: 22.1px;
     }
 }
-
-@font-face {
-    font-family: "NewYear"; 
-    src: url("./newYear.ttf");
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Algerian"; 
-    src: url("./Algerian\ Regular.ttf");
-    font-display: swap;
-}
-

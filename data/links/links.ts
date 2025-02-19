@@ -1,23 +1,53 @@
 
 
 export const links = [
-    // {
-    //     id: 8,
-    //     name: 'Проект',
-    //     to: '/salsamania',
-    //     scroll: 'project',
-    // },
-    {
+        {
         id: 7,
         name: 'Сальса',
-        to: '/',
-        scroll: 'salsa',
+        items: [
+            {
+                id: 1,
+                name: 'О сальсе',
+                to: '/',
+                scroll: 'about',
+            },
+            {
+                id: 2,
+                name: 'Почему сальса?',
+                to: '/',
+                scroll: 'salsa',
+            },
+            {
+                id: 3,
+                name: 'Как выглядит сальса?',
+                to: '/',
+                scroll: 'lookSalsa',
+            },
+        ]
     },
     {
         id: 1,
         name: 'О школе',
-        to: '/',
-        scroll: 'school',
+        items: [
+            {
+                id: 0,
+                name: 'Школа "СальсаБрест"',
+                to: '/',
+                scroll: 'school',
+            },
+            {
+                id: 1,
+                name: 'Наши занятия',
+                to: '/',
+                scroll: 'lessons',
+            },
+            {
+                id: 2,
+                name: 'Юридическая информация',
+                to: '/',
+                scroll: 'info',
+            },
+        ]
     },
     {
         id: 3,

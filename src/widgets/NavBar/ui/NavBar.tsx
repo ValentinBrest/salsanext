@@ -10,6 +10,7 @@ import { NavLogo } from '@/shared/ui/NavLogo/NavLogo';
 import Image from 'next/image';
 import cl from './NavBar.module.scss';
 import { Button } from '@/shared/ui/Button/Button';
+import { Drawer } from '@/shared/ui/Drawer';
 
 interface NavBarProps {
     className?: string;
@@ -18,20 +19,34 @@ interface NavBarProps {
 export const NavBar = ({ className = '' }: NavBarProps) => {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
     const isTableScreen = useMediaQuery({ query: '(max-width: 992px)' });
+    const [isMobile, setIsMobile] = useState(false);
     const onHandleMenu = () => {
-        isTableScreen && setIsOpenMenu(!isOpenMenu);
+        isMobile && setIsOpenMenu(!isOpenMenu);
     };
 
-    const navLinks = links.map((item) => (
-            <LinkScroll
-                href='/'
-                className={isTableScreen ? cl.mobileLink: cl.link}
-                name={item.name}
-                to={item.scroll}
-                key={item.id}
-                onClick={() => onHandleMenu()}
-            />
-        ))
+    const navLinks = links.map((link) => {
+        if (link?.items) {
+            return (
+                <Drawer
+                    items={link.items}
+                    name={link.name}
+                    onHandleMenu={() => onHandleMenu()}
+                    key={link.id}
+                />
+            );
+        } else {
+            return (
+                <LinkScroll
+                    href='/'
+                    className='navbarLink'
+                    name={link.name}
+                    to={link.scroll ?? '/'}
+                    key={link.id}
+                    onClick={() => onHandleMenu()}
+                />
+            );
+        }
+    });
 
     useEffect(() => {
         isOpenMenu
@@ -39,41 +54,46 @@ export const NavBar = ({ className = '' }: NavBarProps) => {
             : document.body.classList.remove('lock');
     }, [isOpenMenu]);
 
+    useEffect(() => {
+        setIsMobile(isTableScreen);
+      }, [isTableScreen]);
+
     return (
         <>
             <header id='up' className={classNames(cl.NavBar, {}, [className])}>
                 <div className='container'>
                     <div className={cl.wrap}>
                         <NavLogo />
-                        {isTableScreen && (
-                            <Button className={cl.btnBurger} onClick={() => setIsOpenMenu(!isOpenMenu)}>
-                                <div
-                                className={classNames(
-                                    cl.burger,
-                                    { [cl.active]: isOpenMenu },
-                                    [className]
-                                )}
-                            />
+                        {isMobile && (
+                            <Button
+                                className={cl.btnBurger}
+                                onClick={() => setIsOpenMenu(!isOpenMenu)}
+                            >
+                                <span
+                                    className={classNames(
+                                        cl.burger,
+                                        { [cl.active]: isOpenMenu },
+                                        [className]
+                                    )}
+                                />
                             </Button>
                         )}
 
-                        {!isTableScreen && (
-                            <nav className={cl.links}>
-                                {navLinks}
-                            </nav>
+                        {!isMobile && (
+                            <nav className={cl.links}>{navLinks}</nav>
                         )}
                     </div>
                 </div>
             </header>
-            {isTableScreen && (
-                <nav
+            {isMobile && (
+                <div
                     className={classNames(cl.menu, {
                         [cl.visible]: isOpenMenu,
                     })}
                 >
                     <Image src={guitar} className={cl.guitar} alt='гитара' />
                     {navLinks}
-                </nav>
+                </div>
             )}
         </>
     );

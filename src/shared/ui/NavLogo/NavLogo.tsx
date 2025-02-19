@@ -8,7 +8,7 @@ interface NavLogoProps {
 
 export const NavLogo = ({ className = '' }: NavLogoProps) => {
     return (
-        <a href='https://salsabrest.by' className={classNames(cl.linkLogo, {}, [className])} key={'salsa'}>
+        <a href='/' className={classNames(cl.linkLogo, {}, [className])} key={'salsa'}>
             <Image
                 className={cl.logo}
                 src={'/img/logo.webp'}
