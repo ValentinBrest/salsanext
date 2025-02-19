@@ -43,7 +43,8 @@ export const Photos = ({ backgroundColor, isNewYear = false }: PhotosProps) => {
         setIsModalOpen(false);
     }, []);
 
-    const onOpenModal = useCallback((e) => {
+    const onOpenModal = useCallback((e: React.SyntheticEvent<EventTarget>) => {
+        // @ts-ignore
         setCurImg(e.target.dataset.order);
         setIsModalOpen(true);
     }, []);
