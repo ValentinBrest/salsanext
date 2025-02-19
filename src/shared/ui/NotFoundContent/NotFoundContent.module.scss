@@ -27,3 +27,9 @@
     text-transform: uppercase;
     color: var(--primary-color);
 }
+
+@media (max-width: 768px) {
+    .NotFoundContent {
+        flex-direction: column-reverse;
+    }
+}

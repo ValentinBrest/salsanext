@@ -205,6 +205,10 @@ main {
         text-decoration: none;
         position: relative;
     }
+
+    .notFound {
+        height: calc(100% - var(--navbar-height));
+    }
 }
 
 @media (max-width: 768px) {
