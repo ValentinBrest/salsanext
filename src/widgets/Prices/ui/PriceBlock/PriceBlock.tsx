@@ -61,7 +61,7 @@ export const PriceBlock = ({
                                     : item.name
                             }
                             theme={TextTheme.ITALIC}
-                            className={cl.fff}
+                            className={cl.student}
                         />
 
                         {item.old && (

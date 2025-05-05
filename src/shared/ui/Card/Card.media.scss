@@ -1,6 +1,7 @@
 @media (max-width: 576px) {
     .Card {
-        font: var(--font-m);
+        font-size: var(--font-size-m);
+        line-height: var(--font-line-m);
         font-style: italic;
         padding: 15px;
     }

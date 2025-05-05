@@ -1,7 +1,6 @@
 import { Text, TextTheme } from '@/shared/ui/Text/Text';
 import Image from 'next/image';
 import dance from '../../../../../public/img/dance.webp';
-import mail from '../../../../../public/icon/mail.svg';
 import instagram from '../../../../../public/icon/social/instagram.svg';
 import telegram from '../../../../../public/icon/social/telegram.svg';
 import cl from './TrialLesson.module.scss';

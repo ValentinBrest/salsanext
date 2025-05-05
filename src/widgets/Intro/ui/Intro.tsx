@@ -3,7 +3,7 @@ import { Slider } from '@/shared/ui/Slider/Slider';
 import Image from 'next/image';
 import { intro } from '../../../../data/intro';
 import logo from '../../../../public/img/logo.webp';
-import  {leftImg, rightImg, totalImg} from './images';
+import { leftImg, rightImg, totalImg } from './images';
 import logoNewYear from '../../../../public/img/newYear/logo.webp';
 import cl from './Intro.module.scss';
 import './Intro.scss';
@@ -19,7 +19,6 @@ export const Intro = ({
     backgroundColor,
     isNewYear = false,
 }: IntroProps) => {
-    
     return (
         <section
             style={{ background: backgroundColor }}
@@ -41,16 +40,21 @@ export const Intro = ({
                         <h1 className={cl.title}>{intro.title}</h1>
                         <h2 className={cl.subtitle}>
                             <span>{intro.school}</span>
-                            <span className={cl.salsaIsMore}>{intro.subtitle}</span>
+                            <span className={cl.salsaIsMore}>
+                                {intro.subtitle}
+                            </span>
                         </h2>
                     </div>
 
                     <Image
-                        className={classNames(cl.logo, {[cl.logoNewYear]: isNewYear}, [cl.anim])}
+                        className={classNames(
+                            cl.logo,
+                            { [cl.logoNewYear]: isNewYear },
+                            [cl.anim]
+                        )}
                         src={isNewYear ? logoNewYear : logo}
                         alt='salsa-brest'
                     />
-                    
                 </div>
                 <div className={cl.right}>
                     <div className={cl.salsaRight}>
