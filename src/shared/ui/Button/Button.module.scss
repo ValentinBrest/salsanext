@@ -91,23 +91,19 @@
 }
 
 .size_s {
-    width: var(--font-size-s);
-    height: var(--font-line-s);
+    font: var(--font-size-s);
 }
 
 .size_m {
-    width: var(--font-size-m);
-    height: var(--font-line-m);
+    font: var(--font-size-m);
 }
 
 .size_l {
-    width: var(--font-size-l);
-    height: var(--font-line-l);
+    font: var(--font-size-l);
 }
 
 .size_xl {
-    width: var(--font-size-xl);
-    height: var(--font-line-xl);
+    font: var(--font-size-xl);
 }
 
 .arrow {

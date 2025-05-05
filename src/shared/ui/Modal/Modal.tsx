@@ -13,7 +13,6 @@ interface ModalProps {
     isOpen?: boolean;
     onClose?: () => void;
     lazy?: boolean;
-    isMounted?: boolean;
 }
 
 const Modal = (props: ModalProps) => {
@@ -22,7 +21,6 @@ const Modal = (props: ModalProps) => {
         children,
         isOpen = false,
         onClose,
-        isMounted,
     } = props;
 
     const mods: Record<string, boolean> = {
