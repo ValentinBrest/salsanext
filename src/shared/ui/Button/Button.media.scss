@@ -1,19 +1,16 @@
 @media (max-width: 992px) {
     .size_xl {
         font-size: var(--font-size-l);
-        line-height: var(--font-line-l);
     }
 
     .size_l {
         font-size: var(--font-size-m);
-        line-height: var(--font-line-m);
     }
 }
 
 @media (max-width: 768px) {
     .size_l {
-        font-size: var(--font-size-m);
-        line-height: var(--font-line-m);
+        font-size: var(--font-size-l);
     }
 }
 
